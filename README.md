@@ -1,108 +1,184 @@
-# Gesture-Controlled 3D Visualization and Interactive Learning Platform for Neural Networks
+Gesture-Controlled Neural Network Visualization Platform 🖐️🧠
 
-An interactive, web-based learning platform that allows users to **explore neural network concepts in 3D using hand gestures**.  
-This project combines **computer vision**, **3D graphics**, and **machine learning concepts** to make neural networks more intuitive and visually understandable.
+An interactive web-based application that allows users to explore neural network concepts using real-time hand gesture control. This platform combines computer vision, web technologies, and 3D-style visual interaction to make learning neural networks more intuitive and engaging.
 
-The platform is designed as a **personal learning and visualization tool**, focusing on clarity, interactivity, and intuitive exploration rather than training real models.
+The project focuses on visualization and educational interaction rather than training actual neural network models.
 
----
+🚀 Key Features
 
-## 🎯 Project Motivation
+✋ Real-time Hand Gesture Detection using MediaPipe
 
-Understanding neural networks is often abstract and math-heavy.  
-This project was built to answer a simple question:
+📷 Live Webcam Integration
 
-> *What if you could **see** and **interact** with a neural network using just your hands?*
+🧠 Interactive Neural Network Visualization
 
-By leveraging hand-gesture recognition and real-time 3D rendering, this platform turns neural network components into **interactive visual objects**.
+🎮 Gesture-Based Interaction (Rotate / Zoom / Navigate)
 
----
+⚡ Fast Performance with Vite + React
 
-## ✨ Key Features
+🎨 Modern UI with Tailwind CSS & shadcn/ui
 
-- 🖐️ **Hand-gesture based interaction** using webcam
-- 🧠 **3D visualization of neural networks**
-- 🔗 Visual representation of:
-  - Neurons
-  - Layers
-  - Synaptic connections (weights)
-- 🎨 **Activation visualization** using color and scale
-- 🧩 Multiple neural architectures:
-  - Artificial Neural Network (ANN / MLP)
-  - Convolutional Neural Network (CNN – conceptual)
-  - Region-based CNN (R-CNN – conceptual)
-- ✍️ **Gesture-based annotation** (draw in 3D space)
-- ⚡ Forward propagation animation triggered via pinch gesture
-- 📚 Interactive explanation panel for learning core NN concepts
+📱 Responsive Design
 
----
+🔔 Toast Notifications and UI Feedback
 
-## 🖐️ Gesture Controls
+🛠 Tech Stack
+Frontend
 
-| Gesture | Action |
-|------|------|
-| Index finger pointing | Draw annotations |
-| Pinch (thumb + index) | Trigger forward propagation |
-| Swipe hand left | Switch to CNN architecture |
-| Swipe hand right | Switch to ANN architecture |
-| Hover over objects | View neuron / weight details |
+React (TypeScript)
 
----
+Vite
 
-## 🧠 Concepts Demonstrated
+Tailwind CSS
 
-This platform visually explains key neural network fundamentals:
+shadcn/ui
 
-- Neurons and layers
-- Weights and connections
-- Activation functions (ReLU, Softmax)
-- Forward propagation flow
-- Architectural differences between ANN, CNN, and R-CNN (conceptual)
+React Router
 
-> ⚠️ Note: This is an **educational visualization**, not a training framework.
+React Query
 
----
+Computer Vision
 
-## 🛠️ Tech Stack
+MediaPipe Hands
 
-- **JavaScript**
-- **Three.js** – 3D rendering
-- **MediaPipe Hands** – real-time hand tracking
-- **TensorFlow.js** (included for ML context)
-- **HTML5 / CSS3**
-- **WebGL**
+Web Camera API
 
-All libraries are loaded via CDN. No build tools required.
+Tooling
 
----
-## 📂 Project Structure
+ESLint
 
-gesture-3d-neural-viz/
+PostCSS
+
+Vitest
+
+📁 Project Structure
+project-root/
 │
-├── index.html # Main HTML entry point
-├── app.js # Core logic (3D scene, gestures, NN visualization)
-├── style.css # UI and visual styling
-├── README.md # Documentation
-└── LICENSE # MIT License
+├── public/               # Static assets
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Application pages
+│   ├── hooks/            # Custom React hooks
+│   ├── lib/              # Utility functions
+│   ├── types/            # TypeScript type definitions
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+├── vite.config.ts
+└── tailwind.config.ts
+
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone <your-github-repo-link>
+cd project-folder-name
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Run Development Server
+npm run dev
+
+4️⃣ Open in Browser
+
+After successful build, open:
+
+http://localhost:5173
 
 
----
+(Port may vary depending on availability)
 
-## ▶️ Running the Project Locally
+📷 Camera Permission (Important)
 
-> Webcam access requires running the project via a local server.
+This project requires webcam access for gesture detection.
 
-### Option 1: VS Code (Recommended)
-1. Install **Live Server** extension
-2. Right-click `index.html`
-3. Click **Open with Live Server**
+✅ Allow Camera Access
 
-### Option 2: Python Server
-```bash
-python -m http.server
-```
+When prompted by browser:
 
-Open in Browser:
-   http://localhost:8000
+Allow this site to use your camera?
 
 
+Click Allow
+
+✋ How Gesture Detection Works
+
+Uses MediaPipe Hands for real-time hand landmark detection
+
+Tracks 21 hand keypoints
+
+Processes gesture movement frames
+
+Maps gestures to UI interaction events
+
+Enables intuitive visualization control
+
+📦 Production Build
+
+To generate optimized production build:
+
+npm run build
+
+
+Output will be generated inside:
+
+dist/
+
+🧪 Run Tests (Optional)
+npm run test
+
+❗ Common Issues & Solutions
+❌ Webcam Not Working
+
+✔ Check browser camera permission
+✔ Use Chrome or Edge
+✔ Close other apps using camera
+✔ Refresh the page
+
+❌ Hand Not Detected
+
+✔ Ensure proper lighting
+✔ Keep hand inside camera frame
+✔ Avoid cluttered background
+✔ Keep palm facing camera
+
+❌ App Not Loading
+
+✔ Run npm install again
+✔ Delete node_modules and reinstall
+✔ Restart dev server
+
+🎯 Project Objective
+
+The goal of this project is to create an interactive learning environment where users can visually understand neural network structures using natural hand gestures, improving engagement and conceptual clarity.
+
+🚀 Future Enhancements
+
+Multi-hand gesture support
+
+Gesture customization
+
+Animated neural network layers
+
+VR/AR visualization integration
+
+Model training visualization
+
+👨‍💻 Author
+
+Sireesha Dwarapu
+3rd Year CSE Student
+AI / ML & Computer Vision Enthusiast
+
+⭐ Support
+
+If you like this project:
+
+⭐ Star the repository
+
+🍴 Fork it
+
+🐞 Report issues
+
+🚀 Suggest improvements
