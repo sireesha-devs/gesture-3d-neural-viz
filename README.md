@@ -1,4 +1,4 @@
-##Gesture-Controlled Neural Network Visualization Platform 🖐️🧠
+**Gesture-Controlled Neural Network Visualization Platform 🖐️🧠**
 
 An interactive web-based application that allows users to explore neural network concepts using real-time hand gesture control. This platform combines computer vision, modern web technologies, and 3D-style visual interaction to make learning neural networks more intuitive and engaging.
 
