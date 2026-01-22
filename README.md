@@ -1,10 +1,10 @@
-Gesture-Controlled Neural Network Visualization Platform 🖐️🧠
+##Gesture-Controlled Neural Network Visualization Platform 🖐️🧠
 
-An interactive web-based application that allows users to explore neural network concepts using real-time hand gesture control. This platform combines computer vision, web technologies, and 3D-style visual interaction to make learning neural networks more intuitive and engaging.
+An interactive web-based application that allows users to explore neural network concepts using real-time hand gesture control. This platform combines computer vision, modern web technologies, and 3D-style visual interaction to make learning neural networks more intuitive and engaging.
 
 The project focuses on visualization and educational interaction rather than training actual neural network models.
 
-🚀 Key Features
+##🚀 Key Features
 
 ✋ Real-time Hand Gesture Detection using MediaPipe
 
@@ -16,11 +16,11 @@ The project focuses on visualization and educational interaction rather than tra
 
 ⚡ Fast Performance with Vite + React
 
-🎨 Modern UI with Tailwind CSS & shadcn/ui
+🎨 Modern UI Design using Tailwind CSS and shadcn/ui
 
-📱 Responsive Design
+📱 Responsive Layout for different screen sizes
 
-🔔 Toast Notifications and UI Feedback
+🔔 UI Feedback and Notifications
 
 🛠 Tech Stack
 Frontend
@@ -43,7 +43,7 @@ MediaPipe Hands
 
 Web Camera API
 
-Tooling
+Development Tools
 
 ESLint
 
@@ -69,115 +69,123 @@ project-root/
 ├── vite.config.ts
 └── tailwind.config.ts
 
-⚙️ Installation & Setup
+⚙️ Installation and Setup
 1️⃣ Clone the Repository
-git clone <your-github-repo-link>
+git clone <your-github-repo-url>
 cd project-folder-name
 
 2️⃣ Install Dependencies
 npm install
 
-3️⃣ Run Development Server
+3️⃣ Start Development Server
 npm run dev
 
 4️⃣ Open in Browser
 
-After successful build, open:
+After successful startup, open:
 
 http://localhost:5173
 
 
-(Port may vary depending on availability)
+Port number may vary depending on availability.
 
 📷 Camera Permission (Important)
 
-This project requires webcam access for gesture detection.
+This project requires webcam access for gesture recognition.
 
-✅ Allow Camera Access
+Allow Camera Access
 
-When prompted by browser:
+When prompted by your browser:
 
 Allow this site to use your camera?
 
 
-Click Allow
+Click Allow.
 
 ✋ How Gesture Detection Works
 
 Uses MediaPipe Hands for real-time hand landmark detection
 
-Tracks 21 hand keypoints
+Tracks 21 hand keypoints per frame
 
-Processes gesture movement frames
+Processes continuous gesture movement
 
-Maps gestures to UI interaction events
+Maps gesture patterns to UI interactions
 
-Enables intuitive visualization control
+Enables intuitive control of neural network visualization
 
 📦 Production Build
 
-To generate optimized production build:
+To create an optimized production build:
 
 npm run build
 
 
-Output will be generated inside:
+The output will be generated inside:
 
 dist/
 
 🧪 Run Tests (Optional)
 npm run test
 
-❗ Common Issues & Solutions
-❌ Webcam Not Working
+❗ Common Issues and Solutions
+Webcam Not Working
 
-✔ Check browser camera permission
-✔ Use Chrome or Edge
-✔ Close other apps using camera
-✔ Refresh the page
+Check browser camera permissions
 
-❌ Hand Not Detected
+Use Google Chrome or Microsoft Edge
 
-✔ Ensure proper lighting
-✔ Keep hand inside camera frame
-✔ Avoid cluttered background
-✔ Keep palm facing camera
+Close other applications using the webcam
 
-❌ App Not Loading
+Refresh the page
 
-✔ Run npm install again
-✔ Delete node_modules and reinstall
-✔ Restart dev server
+Hand Gesture Not Detected
+
+Ensure proper lighting conditions
+
+Keep hand inside the camera frame
+
+Avoid cluttered backgrounds
+
+Keep palm facing the camera
+
+Application Not Loading
+
+Run npm install again
+
+Delete node_modules and reinstall dependencies
+
+Restart the development server
 
 🎯 Project Objective
 
-The goal of this project is to create an interactive learning environment where users can visually understand neural network structures using natural hand gestures, improving engagement and conceptual clarity.
+The primary goal of this project is to build an interactive learning platform that helps users visually understand neural network structures using natural hand gestures, improving engagement and conceptual clarity.
 
 🚀 Future Enhancements
 
 Multi-hand gesture support
 
-Gesture customization
+Custom gesture mapping
 
 Animated neural network layers
 
-VR/AR visualization integration
-
 Model training visualization
+
+VR / AR integration
 
 👨‍💻 Author
 
 Sireesha Dwarapu
-3rd Year CSE Student
-AI / ML & Computer Vision Enthusiast
+3rd Year Computer Science Engineering Student
+AI / ML and Computer Vision Enthusiast
 
-⭐ Support
+⭐ Support and Contribution
 
-If you like this project:
+If you find this project useful:
 
 ⭐ Star the repository
 
-🍴 Fork it
+🍴 Fork the project
 
 🐞 Report issues
 
