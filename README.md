@@ -1,73 +1,172 @@
-# Welcome to your Lovable project
 
-## Project info
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+# Gesture-Controlled Neural Network Visualization Platform 🖐️🧠
 
-## How can I edit this code?
+An interactive web-based application that allows users to explore neural network concepts using **real-time hand gesture control**. This platform combines **computer vision**, **modern web technologies**, and **3D-style visual interaction** to make learning neural networks more intuitive and engaging.
 
-There are several ways of editing your application.
+The project focuses on **visualization and educational interaction** rather than training actual neural network models.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🚀 Key Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- ✋ **Real-time Hand Gesture Detection** using MediaPipe  
+- 📷 **Live Webcam Integration**  
+- 🧠 **Interactive Neural Network Visualization**  
+- 🎮 **Gesture-Based Interaction** (Rotate / Zoom / Navigate)  
+- ⚡ **Fast Performance** with Vite + React  
+- 🎨 **Modern UI Design** using Tailwind CSS and shadcn/ui  
+- 📱 **Responsive Layout**  
+- 🔔 **UI Feedback and Notifications**  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Frontend
 
-Follow these steps:
+- React (TypeScript)  
+- Vite  
+- Tailwind CSS  
+- shadcn/ui  
+- React Router  
+- React Query  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Computer Vision
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- MediaPipe Hands  
+- Web Camera API  
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Development Tools
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- ESLint  
+- PostCSS  
+- Vitest  
+
+---
+
+## 📁 Project Structure
+
+project-root/
+│
+├── public/ # Static assets
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Application pages
+│ ├── hooks/ # Custom React hooks
+│ ├── lib/ # Utility functions
+│ ├── types/ # TypeScript type definitions
+│ ├── App.tsx
+│ └── main.tsx
+│
+├── index.html
+├── package.json
+├── vite.config.ts
+└── tailwind.config.ts
+
+
+---
+
+## ⚙️ Installation and Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone <your-github-repo-url>
+cd project-folder-name
+2️⃣ Install Dependencies
+npm install
+3️⃣ Start Development Server
 npm run dev
-```
+4️⃣ Open in Browser
+Open the application in your browser:
 
-**Edit a file directly in GitHub**
+http://localhost:5173
+Port number may change depending on availability.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+📷 Camera Permission (Important)
+This project requires webcam access for gesture recognition.
 
-**Use GitHub Codespaces**
+When prompted by your browser:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Allow this site to use your camera?
+Click Allow.
 
-## What technologies are used for this project?
+✋ How Gesture Detection Works
+Uses MediaPipe Hands for real-time hand landmark detection
 
-This project is built with:
+Tracks 21 hand keypoints per frame
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Processes continuous gesture movement
 
-## How can I deploy this project?
+Maps gestures to UI interaction events
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Enables intuitive neural network visualization control
 
-## Can I connect a custom domain to my Lovable project?
+📦 Production Build
+To create an optimized production build:
 
-Yes, you can!
+npm run build
+Build files will be generated inside:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+dist/
+🧪 Run Tests (Optional)
+npm run test
+❗ Common Issues and Solutions
+Webcam Not Working
+Check browser camera permissions
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Use Google Chrome or Microsoft Edge
+
+Close other applications using the webcam
+
+Refresh the page
+
+Hand Gesture Not Detected
+Ensure proper lighting
+
+Keep hand inside camera frame
+
+Avoid cluttered background
+
+Keep palm facing the camera
+
+Application Not Loading
+Run npm install again
+
+Delete node_modules and reinstall dependencies
+
+Restart development server
+
+🎯 Project Objective
+The main objective of this project is to create an interactive learning platform that helps users visually understand neural network structures using natural hand gestures, improving engagement and conceptual clarity.
+
+🚀 Future Enhancements
+Multi-hand gesture support
+
+Custom gesture mapping
+
+Animated neural network layers
+
+Model training visualization
+
+VR / AR integration
+
+👨‍💻 Author
+Sireesha Dwarapu
+3rd Year Computer Science Engineering Student
+AI / ML and Computer Vision Enthusiast
+
+⭐ Support and Contribution
+If you find this project useful:
+
+⭐ Star the repository
+
+🍴 Fork the project
+
+🐞 Report issues
+
+🚀 Suggest improvements
+
+
+
